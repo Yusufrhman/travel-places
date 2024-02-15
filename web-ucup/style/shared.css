@@ -1,0 +1,138 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#page-logo a {
+  padding: 0.8rem;
+  font-family: "Oleo Script", sans-serif;
+  font-size: 3rem;
+  color: rgb(251, 251, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0.075rem 0.075rem 0.125rem black;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+header li {
+  margin-left: 1.75rem;
+}
+
+header li a {
+  text-decoration: none;
+  color: rgb(251, 251, 0);
+  padding: 0.25rem;
+  text-shadow: 0.075rem 0.075rem 0.125rem black;
+  transition: all 0.4s ease-in;
+}
+header li a:hover {
+  background-color: yellow;
+  color: black;
+  border-radius: 5px;
+  text-shadow: none;
+}
+.menu-button {
+  width: 2rem;
+  margin: 0 0.8rem;
+  display: none;
+}
+.button {
+  color: yellow;
+  border: 2px;
+}
+.button hr {
+  border-style: outset;
+  border-color: yellow;
+  border-width: 2px;
+}
+#side-drawer {
+  position: fixed;
+  z-index: 1;
+  height: 4.75rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(40, 40, 40);
+  display: none;
+  padding: 1rem;
+  top: 0;
+}
+#side-drawer ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#side-drawer a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  margin: auto;
+  color: yellow;
+  text-shadow: 1px 1px 2px;
+}
+#side-drawer:target {
+  display: block;
+}
+#X-button a {
+  font-size: 2.25rem;
+  margin-right: 1rem;
+  color: white;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(0deg, black, rgb(40, 40, 40));
+  padding: 2.5rem;
+  margin: 0;
+}
+
+footer img {
+  width: 3rem;
+  margin: 0 3rem;
+  filter: opacity(50%);
+  transition: filter 0.2s;
+}
+footer img:hover {
+  filter: opacity(100%);
+}
+@media (max-width: 48rem) {
+  .menu-button {
+    display: block;
+  }
+  header {
+    padding: 1rem;
+  }
+  #page-logo a {
+    font-size: 1.75rem;
+  }
+  header li a {
+    display: none;
+  }
+  footer ul {
+    padding: 1rem;
+  }
+  footer img {
+    width: 2rem;
+  }
+}

@@ -1,0 +1,117 @@
+#gambar {
+  height: 43.75rem;
+  background-image: url("../images/places/hiking.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#konten-gambar {
+  width: 75%;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0.125rem 0.175rem 0.2rem black;
+  border-radius: 8px;
+  padding: 3rem 0;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 12.5rem;
+}
+
+#konten-gambar h1 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+#konten-gambar p {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+#konten-gambar a {
+  text-decoration: none;
+  background-color: rgb(251, 251, 0);
+  padding: 0.75rem 1.5rem;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0.125rem 0.175rem 0.2rem black;
+  transition: background-color 0.2s ease-out;
+}
+#konten-gambar a:hover {
+  background-color: orange;
+}
+#destination {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+#highlights {
+  padding: 1.5rem;
+  background: linear-gradient(0deg, rgb(227, 255, 253), #cacdb9);
+}
+#highlights h2 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: rgb(59, 65, 64);
+  margin: 1.5rem 0;
+}
+
+.destinations {
+  margin: 0 1.25rem;
+}
+.destinations img {
+  height: 15rem;
+  width: 22.5rem;
+  border-radius: 10px;
+  box-shadow: 0.125rem 0.175rem 0.2rem black;
+  object-fit: cover;
+}
+.destinations p {
+  color: rgb(45, 41, 41);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin: 1.25rem 0;
+}
+.destinations strong {
+  color: rgb(2, 83, 54);
+}
+
+@media (max-width: 48rem) {
+  #gambar {
+    height: 42rem;
+  }
+  #konten-gambar h1 {
+    font-size: 2rem;
+  }
+  #konten-gambar p {
+    font-size: 1.25rem;
+  }
+  #konten-gambar a {
+    font-size: 1rem;
+  }
+  #highlights h2 {
+    font-size: 1.5rem;
+  }
+  .destinations img {
+    width: 20rem;
+    height: 12.5rem;
+  }
+  .destinations p {
+    font-size: 1.2rem;
+  }
+}
